@@ -1,5 +1,7 @@
 # vue_cli3_todolist
 
+## Simple TodoList on Vue CLI 3
+
 ## Project setup
 ```
 npm install
