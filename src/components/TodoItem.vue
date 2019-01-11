@@ -7,6 +7,7 @@
                     @change="markComplete"
             >
             {{todo.title}}
+            <button class="del" @click="$emit('del-todo', todo.id)">x</button>
         </p>
     </div>
 </template>
@@ -44,5 +45,6 @@
         border-radius: 50%;
         cursor: pointer;
         float: right;
+        outline: none;
     }
 </style>

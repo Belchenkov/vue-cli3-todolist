@@ -2,6 +2,7 @@
   <div id="app">
     <Todos
       :todos="todos"
+      @del-todo="delTodo"
     />
   </div>
 </template>
@@ -33,6 +34,11 @@ export default {
   },
   components: {
       Todos
+  },
+  methods: {
+      delTodo (id) {
+          this.todos = this.todos.filter(todo => todo.id !== id);
+      }
   }
 }
 </script>
