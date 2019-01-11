@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     <Todos
       :todos="todos"
       @del-todo="delTodo"
@@ -9,6 +10,7 @@
 
 <script>
 import Todos from './components/Todos';
+import Header from './components/layout/Header';
 
 export default {
   data () {
@@ -33,7 +35,8 @@ export default {
       }
   },
   components: {
-      Todos
+      Todos,
+      Header
   },
   methods: {
       delTodo (id) {
